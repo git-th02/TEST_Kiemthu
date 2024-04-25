@@ -20,9 +20,11 @@ public class NextDateCalculator {
         int nextYear = year;
         
         if (day == 31 && month == 12) {
+//            return "01/01" + year +1;
             nextDay = 1;
             nextMonth = 1;
             nextYear = year + 1;
+
         } else if (day == 31) {
             nextDay = 1;
             nextMonth = month + 1;
